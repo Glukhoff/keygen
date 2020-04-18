@@ -3,3 +3,5 @@
 ```sh
 SPASY-5FDWE-51AXZ-ENH3S-PQZMR
 ```
+Запуск программы python3 keygen.py -q 10
+[-q 10] Количество генерируемых ключей
