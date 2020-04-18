@@ -1,6 +1,3 @@
-#!/usr/bin/python
-# -*- coding: UTF-8 -*-
-
 import argparse
 import random
 import string
@@ -15,14 +12,6 @@ parser.add_argument('-q', type=int)
 args = parser.parse_args()
 
 
-def qkey():
-    try:
-        quantity = int(input('Введите необходимое количество токенов: '))
-    except:
-        print('Введено не корректное значение')
-    return quantity
-
-
 def gen_key():
     key = ''
     alphabet = string.ascii_uppercase + '0123456789'
@@ -34,8 +23,8 @@ def gen_key():
     return key
 
 
-def write_key(key: str):
-    with open('/Users/glukhovsergey/Desktop/key.txt', 'a') as f:
+def write_key(key):
+    with open(f'/Users/{os.getlogin()}/Desktop/key.txt', 'a') as f:
         f.write(f'{key}\n')
         f.close()
 
